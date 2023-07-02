@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="main-nav container flex">
+            <!-- logo -->
+            <h4 onclick="reload()"><b>Home</b></h4>
+
+            <div class="nav-links">
+                <ul class="flex">
+                    <li class="hover-link nav-item" id="Cricket" onclick="onNavItemClick('Cricket')"><b>Cricket</b></li>
+                    <li class="hover-link nav-item" id="Finance" onclick="onNavItemClick('Finance')"><b>Finance</b></li>
+                    <li class="hover-link nav-item" id="Politics" onclick="onNavItemClick('Politics')"><b>Politics</b></li>
+                    <li class="hover-link nav-item" id="Technology" onclick="onNavItemClick('Technology')"><b>Technology</b></li>
+                </ul>
+            </div>
+            <div class="search-bar flex">
+                <input id="seach-text" type="text" class="news-input" placeholder="eg:- Science">
+                <button class="search-button" id="search-button"><b>Search</b></button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="cards-container container flex" id="cards-container">
+            
+        </div>
+    </main>
+
+    <template id="template-news-card">
+        <div class="card">
+            <div class="card-header">
+                <img src="https://via.placeholder.com/400x200" alt="news-image" id="news-img">
+            </div>
+            <div class="card-content">
+                <h3 id="news-title">This is the Title</h3>
+                <h6 class="news-source" id="news-source">End Gadget 28/08/2023</h6>
+                <p class="news-desc" id="news-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus veniam velit dolor excepturi, repellendus sed autem nobis, pariatur repudiandae magni libero! Quidem corrupti delectus nobis laborum dolor, qui cumque eaque.</p>
+            </div>
+        </div>
+    </template>
+
+
+   <script src="script.js" ></script>
+</body>
+</html>
